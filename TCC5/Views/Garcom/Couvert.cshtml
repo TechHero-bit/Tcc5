@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Couvert";
+}
+
+<h2>Couvert</h2>
+
+<table class="table table-bordered table-hover table-responsive">
+    <tr>
+        <th>Id</th>
+        <th>Valor</th>
+        <th>Data</th>
+    </tr>
+
+    @foreach (var item in ViewBag.Couvert)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Valor</td>
+            <td>@item.Data</td>
+        </tr>
+
+    }
+</table>

@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+@{
+    ViewBag.Title = "Adicionar Mesa Seção";
+}
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Adicionar Mesa Seção</title>
+</head>
+<body>
+    <div>
+        <form class="row col-lg-3" action="/Adm/SalvarMesaSecao" method="post">
+            <h2 style="font-family: Impact; color: #0B5345">Adicionar Mesa Seção</h2>
+
+            <div class="col-lg-12">
+                <label for="id_secao" class="form-label">Id Seção</label>
+                <input type="text" id="id_secao" name="id_secao" class="form-control" />
+            </div>
+            <div class="col-lg-12">
+                <label for="id_mesa" class="form-label">Id Mesa</label>
+                <input type="text" id="id_mesa" name="id_mesa" class="form-control" />
+            </div>
+            <div class="col-lg-12">
+                <label for="data" class="form-label">Data</label>
+                <input type="datetime-local" id="data" name="data" class="form-control" />
+            </div>
+
+            <div class="col-lg-12">
+                <br />
+                <button class="btn btn-success" type="submit"> Salvar</button>
+            </div>
+
+        </form>
+
+    </div>
+</body>
+</html>

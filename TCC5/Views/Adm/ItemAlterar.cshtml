@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+@{
+    ViewBag.Title = "Alterar Item";
+}
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Alterar Pedido</title>
+</head>
+@{ 
+    var item = ViewBag.Item;
+}
+<body>
+    <div>
+        <form class="row col-lg-3" action="/Adm/SalvarItem" method="post">
+            <h2 style="font-family: Impact; color: #0B5345">Alterar Item</h2>
+
+            <div class="col-lg-12">
+                <input type="hidden" id="id" name="id" value="@item.Id" />
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" id="nome" name="nome" class="form-control" value="@item.Nome" />
+            </div>
+            <div class="col-lg-12">
+                <label for="tipo_id" class="form-label">Numero do item</label>
+                <input type="text" id="tipo_id" name="tipo_id" class="form-control" value="@item.Tipo_Id"/>
+            </div>
+            <div class="col-lg-12">
+                <label for="descricao" class="form-label">Descrição do Item</label>
+                <input type="text" id="descricao" name="descricao" class="form-control" value="@item.Descricao"/>
+            </div>
+            <div class="col-lg-12">
+                <label for="valor" class="form-label">Valor do Item</label>
+                <input type="text" id="valor" name="valor" class="form-control" value="@item.Valor"/>
+            </div>
+            <div class="col-lg-12">
+                <label for="dataI" class="form-label">Data</label>
+                <input type="datetime-local" id="dataI" name="dataI" class="form-control"  value="@item.Data" />
+            </div>
+
+            <div class="col-lg-12">
+                <br />
+                <button class="btn btn-success" type="submit"> Salvar</button>
+            </div>
+
+        </form>
+
+    </div>
+</body>
+</html>
+
+

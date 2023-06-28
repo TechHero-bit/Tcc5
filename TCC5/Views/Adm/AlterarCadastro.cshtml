@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+@{
+    ViewBag.Title = "Alterar Cadastro";
+}
+
+<h2>Alterar Cadastro</h2>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Alterar Cadastro</title>
+</head>
+@{ 
+    var Cadastro = ViewBag.Login;
+}
+<body>
+    <div>
+        <form class="row col-lg-3" action="/Adm/SalvarLogin" method="post">
+            <h2 style="font-family: Impact; color: #0B5345">Alterar Login</h2>
+
+            <div class="col-lg-12">
+                <input type="hidden" id="id" name="id" value="@Cadastro.Id" />
+                <label for="id_tipofunc" class="form-label">Id_tipofunc</label>
+                <input type="text" id="id_tipofunc" name="id_tipofunc" class="form-control" value="@Cadastro.Id_tipofunc" />
+            </div>
+
+            <div class="col-lg-12">
+                <label for="id_secao" class="form-label">Id_secao</label>
+                <input type="text" id="id_secao" name="id_secao" class="form-control" value="@Cadastro.Id_secao" />
+            </div>
+
+            <div class="col-lg-12">
+                <label for="cpf" class="form-label">Cpf</label>
+                <input type="text" id="cpf" name="cpf" class="form-control" value="@Cadastro.Cpf" />
+            </div>
+
+            <div class="col-lg-12">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" id="nome" name="nome" class="form-control" value="@Cadastro.Nome" />
+            </div>
+
+            <div class="col-lg-12">
+                <label for="senha" class="form-label">Senha</label>
+                <input type="text" id="senha" name="senha" class="form-control" value="@Cadastro.Senha" />
+            </div>
+
+            <div class="col-lg-12">
+                <br />
+                <button class="btn btn-success" type="submit"> Salvar</button>
+            </div>
+
+        </form>
+
+    </div>
+</body>
+</html>

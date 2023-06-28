@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "Cardapio";
+}
+
+<h2>Cardapio</h2>
+
+<table class="table table-bordered table-hover table-responsive">
+    <tr>
+        <th>Id</th>
+        <th>Item Id</th>
+        <th>Descrição</th>
+        <th>Valor</th>
+        <th>Data</th>
+    </tr>
+
+    @foreach (var item in ViewBag.Cardapio)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Item_Id</td>
+            <td>@item.Descricao</td>
+            <td>@item.Valor</td>
+            <td>@item.DataC</td>
+        </tr>
+
+    }
+</table>

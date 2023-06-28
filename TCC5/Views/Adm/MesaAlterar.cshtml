@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+@{
+    ViewBag.Title = "Alterar Mesa";
+}
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Alterar Mesa</title>
+</head>
+@{ 
+    var Mesa = ViewBag.Mesa;
+}
+<body>
+    <div>
+        <form class="row col-lg-3" action="/Adm/SalvarMesa" method="post">
+            <h2 style="font-family: Impact; color: #0B5345">Alterar Mesa</h2>
+
+            <div class="col-lg-12">
+                <input type="hidden" id="id" name="id" value="@Mesa.Id" />
+                <label for="numero" class="form-label">Numero</label>
+                <input type="text" id="numero" name="numero" class="form-control" value="@Mesa.Numero" />
+            </div>
+            <div class="col-lg-12">
+                <label for="setor" class="form-label">Numero do Setor</label>
+                <input type="text" id="setor" name="setor" class="form-control" value="@Mesa.Setor" />
+            </div>
+            <div class="col-lg-12">
+                <label for="status_mesa" class="form-label">status_mesa</label>
+                <input type="text" id="status_mesa" name="status_mesa" class="form-control" value="@Mesa.Status" />
+            </div>
+
+            <div class="col-lg-12">
+                <label for="data" class="form-label">Data</label>
+                <input type="datetime-local" id="data" name="data" class="form-control" value="@Mesa.Data" />
+            </div>
+
+            <div class="col-lg-12">
+                <br />
+                <button class="btn btn-success" type="submit"> Salvar</button>
+            </div>
+
+        </form>
+
+    </div>
+</body>
+</html>
+
+

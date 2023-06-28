@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "MesaSecaoLista";
+}
+
+<h2>MesaSecaoLista</h2>
+
+<table class="table table-bordered table-hover table-responsive">
+    <tr>
+        <th>Id Seção</th>
+        <th>Id Mesa</th>
+        <th>Data</th>
+    </tr>
+
+    @foreach (var item in ViewBag.MesaSecao)
+    {
+        <tr>
+            <td>@item.Id_secao</td>
+            <td>@item.Id_mesa</td>
+            <td>@item.Data</td>
+        </tr>
+
+    }
+</table>

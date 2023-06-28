@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+@{
+    ViewBag.Title = "Tipo De Funcionario Alterar";
+}
+
+<h2>Tipo De Funcionario Alterar</h2>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Alterar Tipo De Funcionario</title>
+</head>
+@{ 
+    var Cadastro = ViewBag.Login;
+}
+<body>
+    <div>
+        <form class="row col-lg-3" action="/Adm/SalvarTipofunc" method="post">
+            <h2 style="font-family: Impact; color: #0B5345">Alterar Tipo De Funcionario</h2>
+
+            <div class="col-lg-12">
+                <input type="hidden" id="id" name="id" value="@Cadastro.Id" />
+                <label for="id_setor" class="form-label">Id Do Setor</label>
+                <input type="text" id="id_setor" name="id_setor" class="form-control" value="@Cadastro.Id_setor"/>
+            </div>
+
+            <div class="col-lg-12">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" id="nome" name="nome" class="form-control" value="@Cadastro.Nome" />
+            </div>
+
+            <div class="col-lg-12">
+                <label for="setor" class="form-label">Setor</label>
+                <input type="text" id="setor" name="setor" class="form-control" value="@Cadastro.Setor" />
+            </div>
+
+            <div class="col-lg-12">
+                <br />
+                <button class="btn btn-success" type="submit"> Salvar</button>
+            </div>
+
+        </form>
+
+    </div>
+</body>
+</html>

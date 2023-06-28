@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "ItemLista";
+}
+
+<h2>ItemLista</h2>
+
+<table class="table table-bordered table-hover table-responsive">
+    <tr>
+        <th>Id</th>
+        <th>Nome</th>
+        <th>Tipo Id</th>
+        <th>Descrição</th>
+        <th>Valor</th>
+        <th>Data</th>
+    </tr>
+
+    @foreach (var item in ViewBag.Item)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Nome</td>
+            <td>@item.Tipo_Id</td>
+            <td>@item.Descricao</td>
+            <td>@item.Valor</td>
+            <td>@item.Data</td>
+            <td>
+            <a class="link" href="/Adm/ItemAlterar/@item.Id"> Alterar Item</a>
+            </td>
+            <td>
+                <a class="link" href="/Adm/ItemExcluir/@item.Id">Excluir Item</a>
+            </td>
+        </tr>
+
+    }
+</table>

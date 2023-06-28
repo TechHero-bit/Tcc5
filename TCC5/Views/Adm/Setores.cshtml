@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "Setores";
+}
+
+<h2>Setores</h2>
+
+<table class="table table-bordered table-hover table-responsive">
+    <tr>
+        <th>Id</th>
+        <th>Nome</th>
+    </tr>
+
+    @foreach (var item in ViewBag.Setor)
+    {
+<tr>
+    <td>@item.Id</td>
+    <td>@item.Nome</td>
+    <td>
+        <a class="link" href="/Adm/AlterarSetor/@item.Id"> Alterar Setor</a>
+    </td>
+    <td>
+        <a class="link" href="/Adm/ExcluirSetor/@item.Id">Excluir Setor</a>
+    </td>
+</tr>
+
+    }
+</table>

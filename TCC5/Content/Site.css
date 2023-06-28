@@ -1,0 +1,84 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.navbar {
+    background-color: #0B5345;
+}
+
+th {
+    color: white;
+    background-color: #0B5345;
+    font-family: 'Courier New';
+}
+
+a {
+    color: #0B5345;
+    font-family: Georgia, serif;
+    text-align: center;
+    color: #0B5345;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+    a:hover {
+        text-decoration: none;
+        color: #17b595;
+    }
+
+h1 {
+    font-family: Georgia, serif;
+    text-align: center;
+    color: #0B5345;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 72px;
+}
+
+#tab {
+    background-color: #0B5345
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    text-decoration: none;
+    color: white;
+    background-color: #0B5345;
+}
+
+h2 {
+    font-family: Impact;
+    color: #0B5345;
+}
+
+.center {
+    margin: auto;
+    width: 60%;
+    border: 5px solid #FFFF00;
+    padding: 10px;
+}
+
+.DIV {
+    text-align: center;
+}
+
+.campo1 {
+    float: left;
+}

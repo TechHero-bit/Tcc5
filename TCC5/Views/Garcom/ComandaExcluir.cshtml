@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+@{
+    ViewBag.Title = "Alterar Comanda";
+}
+
+<h2>Alterar Comanda</h2>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Alterar Comanda</title>
+</head>
+@{
+    var Comanda = ViewBag.Comanda;
+}
+<body>
+    <div>
+        <form class="row col-lg-3" action="/Garcom/ExcluirComanda" method="post">
+            <h2 style="font-family: Impact; color: #0B5345">Alterar Comanda</h2>
+
+            <div class="col-lg-12">
+                <input type="hidden" id="id" name="id" readonly value="@Comanda.Id" />
+                <label for="mesa_id" class="form-label">Mesa id</label>
+                <input type="text" id="mesa_id" name="mesa_id" class="form-control" readonly value="@Comanda.Mesa_id" />
+            </div>
+
+            <div class="col-lg-12">
+                <label for="id_couvert" class="form-label">Id couvert</label>
+                <input type="text" id="id_couvert" name="id_couvert" class="form-control" readonly value="@Comanda.Id_couvert" />
+            </div>
+
+            <div class="col-lg-12">
+                <label for="data" class="form-label">Data</label>
+                <input type="datetime-local" id="data" name="data" class="form-control" readonly value="@Comanda.Data" />
+            </div>
+
+            <div class="col-lg-12">
+                <label for="valor_comanda" class="form-label">Valor</label>
+                <input type="text" id="valor_comanda" name="valor_comanda" class="form-control" readonly value="@Comanda.Valor_comanda" />
+            </div>
+
+            <div class="col-lg-12">
+                <label for="lei_da_gorjeta" class="form-label">lei da gorjeta</label>
+                <input type="text" id="lei_da_gorjeta" name="lei_da_gorjeta" class="form-control" readonly value="@Comanda.Lei_da_gorjeta" />
+            </div>
+
+            <div class="col-lg-12">
+                <label for="desconto" class="form-label">Desconto</label>
+                <input type="text" id="desconto" name="desconto" class="form-control" readonly value="@Comanda.Desconto" />
+            </div>
+
+            <div class="col-lg-12">
+                <label for="justificativa_desconto" class="form-label">Justificativa desconto</label>
+                <input type="text" id="justificativa_desconto" name="justificativa_desconto" class="form-control" readonly value="@Comanda.Justificativa_desconto" />
+            </div>
+
+            <div class="col-lg-12">
+                <br />
+                <button class="btn btn-success" type="submit"> Salvar</button>
+            </div>
+
+        </form>
+
+    </div>
+</body>
+</html>
+
+

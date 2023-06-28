@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+@{
+    ViewBag.Title = "Alterar Pedido";
+}
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Alterar Pedido</title>
+</head>
+@{ 
+    var Pedido = ViewBag.Pedido;
+}
+<body>
+    <div>
+        <form class="row col-lg-3" action="/Garcom/SalvarPedido" method="post">
+            <h2 style="font-family: Impact; color: #0B5345">Alterar Pedido</h2>
+
+            <div class="col-lg-12">
+                <input type="hidden" id="id" name="id" value="@Pedido.Id" />
+                <label for="comanda_id" class="form-label">Comanda id</label>
+                <input type="text" id="comanda_id" name="comanda_id" class="form-control" value="@Pedido.Comanda_id" />
+            </div>
+
+            <div class="col-lg-12">
+                <label for="data" class="form-label">Data</label>
+                <input type="datetime-local" id="data" name="data" class="form-control" value="@Pedido.Data" />
+            </div>
+
+            <div class="col-lg-12">
+                <br />
+                <button class="btn btn-success" type="submit"> Salvar</button>
+            </div>
+
+        </form>
+
+    </div>
+</body>
+</html>
+
+

@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<head>
+    
+</head>
+<div>
+    <h1><b>Interface do Gerente</b></h1>
+</div>
+
+<br />
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link" style="color: white;background-color:#0B5345" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Adicionar</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" style="color: white;background-color:#0B5345" data-toggle="tab" href="#perfil" role="tab" aria-controls="profile" aria-selected="false">Listas</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" style="color: white;background-color:#0B5345" data-toggle="tab" href="#n" role="tab" aria-controls="profile" aria-selected="false">Cadastros</a>
+    </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <meta charset=utf-8 />
+        <br />
+        <a class="btn btn-primary btn-lg btn-block" href="@Url.Action("AdcSetor", "Adm")">Adicionar Setor</a>
+        <br />
+        <a class="btn btn-primary btn-lg btn-block" href="@Url.Action("AdcCardapio", "Adm")">Adicionar Cardapio</a>
+        <br />
+        <a class="btn btn-primary btn-lg btn-block" href="@Url.Action("ItemAdc", "Adm")">Adicionar Item</a>
+        <br />
+        <a class="btn btn-primary btn-lg btn-block" href="@Url.Action("ItemTipoAdc", "Adm")">Adicionar Tipo de Item</a>
+        <br />
+        <a class="btn btn-primary btn-lg btn-block" href="@Url.Action("MesaAdc", "Adm")">Adicionar Mesa</a>
+        <br />
+        <a class="btn btn-primary btn-lg btn-block" href="@Url.Action("MesaSecaoAdc", "Adm")">Adicionar Seção da Mesa</a>
+        <br />
+        <a class="btn btn-primary btn-lg btn-block" href="@Url.Action("SecaoAdc", "Adm")">Adicionar Seção</a>
+        <br />
+        <a class="btn btn-primary btn-lg btn-block" href="@Url.Action("TipoFuncCad", "Adm")">Adicionar Cadastro de funcionario</a>
+        <br />
+        <a class="btn btn-primary btn-lg btn-block" href="@Url.Action("Cadastro", "Adm")">Adicionar Cadastro</a>
+    </div>
+    <div class="tab-pane fade" id="perfil" role="tabpanel" aria-labelledby="profile-tab">
+        <br />
+        <a class="btn btn-primary btn-lg btn-block" href="@Url.Action("CadastroLista", "Adm")">Lista De Cadastro</a>
+        <br />
+        <a class="btn btn-primary btn-lg btn-block" href="@Url.Action("ItemLista", "Adm")">Lista De Itens</a>
+        <br />
+        <a class="btn btn-primary btn-lg btn-block" href="@Url.Action("ItemTipoLista", "Adm")">Lista De Tipod de Item</a>
+        <br />
+        <a class="btn btn-primary btn-lg btn-block" href="@Url.Action("ListaMesas", "Adm")">Lista De Mesas</a>
+        <br />
+        <a class="btn btn-primary btn-lg btn-block" href="@Url.Action("MesaSecaoLista", "Adm")">Lista De Seções de Mesa</a>
+        <br />
+        <a class="btn btn-primary btn-lg btn-block" href="@Url.Action("SecaoLista", "Adm")">Lista De Seção</a>
+        <br />
+        <a class="btn btn-primary btn-lg btn-block" href="@Url.Action("Setores", "Adm")">Lista De Setores</a>
+        <br />
+        <a class="btn btn-primary btn-lg btn-block" href="@Url.Action("TipoFunLista", "Adm")">Lista De Tipos de Funcionarios</a>
+
+
+    </div>
+    <div class="tab-pane fade" id="n" role="tabpanel" aria-labelledby="profile-tab">
+        
+    </div>
+</div>
+<br />
+<div>
+
+</div>

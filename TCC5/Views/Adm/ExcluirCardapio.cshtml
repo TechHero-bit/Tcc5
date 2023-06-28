@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+@{
+    ViewBag.Title = "Excluir Cardapio";
+}
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Excluir Cardapio</title>
+</head>
+@{ 
+    var Cardapio = ViewBag.Cardapio;
+}
+<body>
+    <div>
+        <form class="row col-lg-3" action="/Adm/ExcluirCard" method="post">
+            <h2 style="font-family: Impact; color: #0B5345">Excluir Menu</h2>
+
+            <div class="col-lg-12">
+                <input type="hidden" id="id" name="id" readonly value="@Cardapio.Id" />
+                <label for="item_id" class="form-label">Item - Id</label>
+                <input type="text" id="item_id" name="item_id" class="form-control" readonly value="@Cardapio.Item_id" />
+            </div>
+            <div class="col-lg-12">
+                <label for="descricao" class="form-label">Descrição</label>
+                <input type="text" id="descricao" name="descricao" class="form-control" readonly value="@Cardapio.Descricao" />
+            </div>
+            <div class="col-lg-12">
+                <label for="valor" class="form-label">Valor</label>
+                <input type="text" id="valor" name="valor" class="form-control" readonly value="@Cardapio.Valor" />
+            </div>
+
+            <div class="col-lg-12">
+                <label for="datac" class="form-label">Data</label>
+                <input type="datetime-local" id="datac" name="datac" class="form-control" readonly value="@Cardapio.DataC" />
+            </div>
+
+            <div class="col-lg-12">
+                <br />
+                <button class="btn btn-success" type="submit"> Salvar</button>
+            </div>
+
+        </form>
+
+    </div>
+</body>
+</html>
+
+

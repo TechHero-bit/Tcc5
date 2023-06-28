@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "ItemTipoLista";
+}
+
+<h2>ItemTipoLista</h2>
+
+<table class="table table-bordered table-hover table-responsive">
+    <tr>
+        <th>Id</th>
+        <th>Nome</th>
+    </tr>
+    @foreach (var item in ViewBag.ItemT)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Nome</td>
+        </tr>
+    }
+</table>

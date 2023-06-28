@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Comanda";
+}
+
+<h2>Comanda</h2>
+
+<table class="table table-bordered table-hover table-responsive">
+    <tr>
+        <th>Id</th>
+        <th>Mesa Id</th>
+        <th>Id Couvert</th>
+        <th>Data</th>
+        <th>Valor Comanda</th>
+        <th>Lei Da Gorjeta</th>
+        <th>Desconto</th>
+        <th>Justificativa Desconto</th>
+    </tr>
+
+    @foreach (var item in ViewBag.Comanda)
+    {
+<tr>
+    <td>@item.Id</td>
+    <td>@item.Mesa_id</td>
+    <td>@item.Id_couvert</td>
+    <td>@item.Data</td>
+    <td>@item.Valor_comanda</td>
+    <td>@item.Lei_da_gorjeta</td>
+    <td>@item.Desconto</td>
+    <td>@item.Justificativa_desconto</td>
+    <td>
+        <a class="link" href="/Garcom/ComandaAlterar/@item.Id"> Alterar Comanda</a>
+    </td>
+    <td>
+        <a class="link" href="/Garcom/ComandaExcluir/@item.Id">Excluir Comanda</a>
+    </td>
+</tr>
+
+    }
+</table>

@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "SecaoLista";
+}
+
+<h2>SecaoLista</h2>
+
+<table class="table table-bordered table-hover table-responsive">
+    <tr>
+        <th>Id</th>
+        <th>Numero</th>
+    </tr>
+
+    @foreach (var item in ViewBag.Secao)
+    {
+<tr>
+    <td>@item.Id</td>
+    <td>@item.Numero</td>
+    <td>
+        <a class="link" href="/Adm/SecaoAlterar/@item.Id"> Alterar Item</a>
+    </td>
+    <td>
+        <a class="link" href="/Adm/SecaoExcluir/@item.Id">Excluir Item</a>
+    </td>
+</tr>
+
+    }
+</table>
